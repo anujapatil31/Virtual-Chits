@@ -1,0 +1,26 @@
+
+.jumbotron{
+	color: #2c3e50;
+	/*background-image: panimg.jpg;*/
+}
+.navbar-inverse{
+	color:#2c3e50;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color:white;
+}
+a{
+	color:#2c3e50;
+}
+.navbar-inverse .navbar-brand{
+	color:white;
+}
+body {
+/* background-image: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash-1024x683.jpg");*/
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: top;
+ 
+ 
+}

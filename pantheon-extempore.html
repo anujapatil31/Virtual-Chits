@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pantheon</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap_3.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="image_gallery.css">
+
+<style type="text/css">	
+body {
+    /*background-image: url(https://i.pinimg.com/originals/12/60/f4/1260f402a5d6813d2ddf937bbd0bfb98.jpg);*/
+    background-color: grey;
+    font-family: Open Sans;
+    font-size: 32px;
+  	color: #222;
+}
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 350px;
+    height: 350px;
+    left: 100%;
+    top: 100%;
+    
+    cursor: pointer;
+}
+
+.card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .card div {
+        position: absolute;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .back {
+       
+        background-color: white;
+        color: black;
+        transform: rotateX(180deg);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron text-center text-light" class="jumbotron">
+            
+			<h3>PANTHEON</h3>
+			<p><h1>EXTEMPORE</h1></p>
+		</div>
+		<div class="row">
+			<div class="col-lg-4"><!--   add col-sm/md-6 -->
+	<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div  class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             1
+        </div>
+        <div class="back">
+        	<h1>Topic-1</h1> 
+      <p>A global ban on meat and animal produce to combat climate change.</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             2
+        </div>
+        <div class="back">
+        	<h1>Topic-2</h1> 
+      <p>Should vaccine testing start directly with human trials?</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             3
+        </div>
+        <div class="back">
+        	<h1>Topic-3</h1> 
+      <p>Is gender equality the same as giving equal opportunities?</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             4
+        </div>
+        <div class="back">
+        	<h1>Topic-4</h1> 
+      <p>Socio-economic effects of AI revolution.</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             5
+        </div>
+        <div class="back">
+        	<h1>Topic-5</h1> 
+      <p>Is war with China inevitable?</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             6
+        </div>
+        <div class="back">
+        	<h1>Topic-6</h1> 
+      <p>Capital punishment: a necessary evil?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             7
+        </div>
+        <div class="back">
+        	<h1>Topic-7</h1> 
+      <p>The impact of video games on mental health.</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             8
+        </div>
+        <div class="back">
+        	<h1>Topic-8</h1> 
+      <p>Did bad politics cause backward culture or did backward culture cause bad politics in India?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             9
+        </div>
+        <div class="back">
+        	<h1>Topic-9</h1> 
+      <p>Should humanity focus more resources into space travel?</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             10
+        </div>
+        <div class="back">
+        	<h1>Topic-10</h1> 
+      <p>The importance of social media in a democracy.</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             11
+        </div>
+        <div class="back">
+        	<h1>Topic-11</h1> 
+      <p>Efficiency of the Indian education system.</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             12
+        </div>
+        <div class="back">
+        	<h1>Topic-12</h1> 
+      <p>What characteristics make an ideal villain?</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             13
+        </div>
+        <div class="back">
+        	<h1>Topic-13</h1> 
+      <p>Is Indian culture dying?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             14
+        </div>
+        <div class="back">
+        	<h1>Topic-14</h1> 
+      <p>How do you start a conversation with a stranger?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             15
+        </div>
+        <div class="back">
+        	<h1>Topic-15</h1> 
+      <p>What is your opinion on actors and celebrities going into politics?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             16
+        </div>
+        <div class="back">
+        	<h1>Topic-16</h1> 
+      <p>Should the use of firecrackers be banned in India?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             17
+        </div>
+        <div class="back">
+        	<h1>Topic-17</h1> 
+      <p>Should modern schools have any form of gender segregation?</p> 
+        </div>
+    </div>
+</label>
+
+				
+			</div>
+			<div class="col-lg-4">
+				<label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">	
+             18
+        </div>
+        <div class="back">
+        	<h1>Topic-18</h1> 
+      <p>Pros and cons of banning zoos.</p> 
+        </div>
+    </div>
+</label>
+</div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             19
+        </div>
+        <div class="back">
+            <h1>Topic-19</h1> 
+      <p>Do you think talent is born or cultivated?</p> 
+        </div>
+    </div>
+</label>
+</div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             20
+        </div>
+        <div class="back">
+            <h1>Topic-20</h1> 
+      <p>Could we be living in a simulation and why do you think so?</p> 
+        </div>
+    </div>
+</label>
+
+			</div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             21
+        </div>
+        <div class="back">
+            <h1>Topic-21</h1> 
+      <p>Are we striving for utopia while achieving dystopia?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             22
+        </div>
+        <div class="back">
+            <h1>Topic-22</h1> 
+      <p>How would you control pollution when enabling space tourism?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             23
+        </div>
+        <div class="back">
+            <h1>Topic-23</h1> 
+      <p>Winning is not as essential as participation.</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             24
+        </div>
+        <div class="back">
+            <h1>Topic-24</h1> 
+      <p>The greatest threat to Earth is the thought that someone else will save it.</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             25
+        </div>
+        <div class="back">
+            <h1>Topic-25</h1> 
+      <p>Would books be obsolete in the next 50 years?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             26
+        </div>
+        <div class="back">
+            <h1>Topic-26</h1> 
+      <p>Are superhero movies destroying storytelling in cinemas?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             27
+        </div>
+        <div class="back">
+            <h1>Topic-27</h1> 
+      <p>How can the government prepare businesses and individuals better for the next pandemic?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             28
+        </div>
+        <div class="back">
+            <h1>Topic-28</h1> 
+      <p>Could we be living in a simulation and why do you think so?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             29
+        </div>
+        <div class="back">
+            <h1>Topic-29</h1> 
+      <p> How would you convince a flat-Earther that the Earth is spherical?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            <div class="col-lg-4">
+                <label>
+    <input type="checkbox"  />
+    <div class="card">
+        <div class="front">
+        <img src="./logo.png" alt="Avatar" style="width:300px;height:300px;">  
+             30
+        </div>
+        <div class="back">
+            <h1>Topic-30</h1> 
+      <p>Why aren't we taking the growing water crisis more seriously?</p> 
+        </div>
+    </div>
+</label>
+
+            </div>
+            
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
